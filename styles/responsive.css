@@ -1,0 +1,64 @@
+/* Media Query for Screens Smaller Than 980px */
+@media screen and (max-width: 980px) {
+
+  /* Hamburger menu */
+  .hamburgerMenu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  /* Side navigation */
+  .sideNav {
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    /* Start off-screen */
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  /* Side navigation close button */
+  .sideNav .closeBtn {
+    display: block;
+  }
+
+  /* Content */
+  .content {
+    transition: margin-left 0.3s;
+    margin-left: 0;
+    /* Reset margin-left */
+  }
+
+  .content .Biography,
+  .content .aboutMe,
+  .content .skills,
+  .content .services,
+  .content .experiences,
+  .content .contact {
+    padding: 30px 30px 30px 60px;
+  }
+}
+
+/* Media Query for Screens Smaller Than 468px */
+@media screen and (max-width: 980px) {
+
+  .content .Biography,
+  .content .aboutMe,
+  .content .skills,
+  .content .services,
+  .content .experiences,
+  .content .contact {
+    padding: 30px 5px 30px 5px;
+  }
+
+  .content .Biography {
+    text-align: center;
+  }
+
+  .content .Biography h1{
+    font-size: 30px;
+  }
+}
